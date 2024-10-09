@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hanzi Pinyin Editor</title>
 <style>
+    @font-face {
+        font-family: 'Hanzi Pinyin Font';
+        src: url('font.woff2') format('woff2'),
+             url('font.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'AA';
+             url('font2.ttf') format('truetype');
+    }
+    
     body {
         margin: 0;
         padding: 0;
@@ -29,7 +39,7 @@
         height: calc(100% - 40px);
         padding: 20px;
         font-size: 18px;
-        font-family: 'Hanzi Pinyin Font', sans-serif;
+        font-family: 'AA', sans-serif;
         border: none;
         overflow-y: auto;
         margin: 0;
@@ -79,18 +89,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    @font-face {
-        font-family: 'Hanzi Pinyin Font';
-        src: url('font.woff2') format('woff2'),
-             url('font.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'AA';
-             url('font2.ttf') format('truetype');
-    }
-</style>
 
 <script>
     const textArea = document.getElementById('textArea');
